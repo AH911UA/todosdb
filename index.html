@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+
+            border-radius: 15px;
+            box-shadow: 0 0 15px lightgrey;
+        }
+
+        input {
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+
+        .todos {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            max-width: 80%;
+            margin: 50px auto;
+        }
+
+        .todo {
+            padding: 20px;
+
+            border-radius: 15px;
+            box-shadow: 0 0 15px lightgrey;
+        }
+
+        .todo h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <form name="addTodo">
+        <input type="text" name="todo">
+        <input type="submit" value="ADD">
+    </form>
+
+    <div class="todos"></div>
+
+    <script src="./api.js"></script>
+    <script src="./todo.component.js"></script>
+    <script src="./lsd.js"></script>
+    <script src="./todos.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
